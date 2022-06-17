@@ -44,6 +44,7 @@ public class MenuOrderServlet extends HttpServlet {
 	        case "밀크쉐이크" : total += 2500; break;
 	        }
 	    }
+	    
 	    request.setAttribute("total", total);
 	    
 	    RequestDispatcher reqDispatcher = getServletContext().getRequestDispatcher("/menu/menuEnd.jsp");
